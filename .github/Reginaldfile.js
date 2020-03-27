@@ -1,5 +1,3 @@
-message("Just testing message 1");
-
-warning("This is a warning");
-
-error("This comment was edited?");
+reginald.message("Just testing message 1");
+reginald.warning("This is a warning");
+reginald.error("This comment was edited?");
