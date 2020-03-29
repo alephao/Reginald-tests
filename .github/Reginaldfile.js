@@ -1,3 +1,4 @@
+console.log(reginald);
 if (reginald.pr.title === 'Testando 123') {
   reginald.message("The title is Testando 123!");
 } else {
