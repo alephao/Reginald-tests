@@ -9,3 +9,7 @@ if (reginald.pr.title === 'Testando Warning') {
 if (reginald.pr.title === 'Testando Error') {
   reginald.error("This is an error");
 }
+
+if (reginald.git.modifiedFiles.some(value => value.endsWith('Reginaldfile.js'))) {
+  reginald.warning("Reginaldfile was modified");
+}
