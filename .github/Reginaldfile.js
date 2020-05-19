@@ -1,15 +1,7 @@
-if (reginald.pr.title === 'Testando Message') {
-  reginald.message("This is a message");
+if (!/\[[A-Z]+-[0-9]+\]\s/.test(reginald.pr.title)) {
+  reginald.error("Title should start with the ticket nuber e.g.: [JIRA-123]")
 }
 
-if (reginald.pr.title === 'Testando Warning') {
-  reginald.warning("This is a warning");
-}
-
-if (reginald.pr.title === 'Testando Error') {
-  reginald.error("This is an error");
-}
-
-if (reginald.git.modifiedFiles.some(value => value.endsWith('Reginaldfile.js'))) {
-  reginald.warning("Reginaldfile was modified");
-}
+// if (reginald.git.modifiedFiles.some(value => value.endsWith('Reginaldfile.js'))) {
+//   reginald.warning("Reginaldfile was modified");
+// }
